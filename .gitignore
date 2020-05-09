@@ -1,4 +1,4 @@
-/application/config/database.php
-/application/config/config.php
+# /application/config/database.php
+# /application/config/config.php
 
 # git에서 약속 됨 이 파일이 존재한다면 이 파일에 적힌 패턴에 있는 파일들은 버전관리 하지않겠다.
