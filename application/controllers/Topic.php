@@ -123,6 +123,7 @@ class Topic extends CI_Controller {
   // 코드 양 줄이고 수정편하게 중복되는 부분 따로 선언 후 호출
   // 앞에 _ 를 붙이면 프라이빗한 메소드가 됨 => url 라우팅에 대한 프라이빗 (=사용자가 _head라고 입력해도 표시x)
   function _head(){
+    $this->load->config('opentutorials');
     $this->load->view('head');
     $topics = $this->topic_model->gets();
     $this->load->view('topic_list', array('topics'=>$topics));
